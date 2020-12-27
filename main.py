@@ -155,7 +155,7 @@ def simple_send():
         sendMessageViaUserId(user, "Hello!")
 
 def setup_schedule():
-    schedule.every().dat.at("18:01").do(scheduled_job)
+    schedule.every().day.at("18:01").do(scheduled_job)
     while True:
         schedule.run_pending()
         time.sleep(1)
